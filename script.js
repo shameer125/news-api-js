@@ -49,7 +49,7 @@ async function fetchNewsQuery(query) {
 function displayBlogs(articles) {
 
     blogContainer.innerHTML = "";
-    
+
     articles.forEach(article => {
         const blogCard = document.createElement("div");
         blogCard.classList.add("blog-card");
@@ -61,12 +61,12 @@ function displayBlogs(articles) {
         article.title.length > 30 ? article.title.slice(0, 30) + "...."
         : article.title;
         title.textContent = truncatedTitle;
+
         const description = document.createElement("p")
          const truncatedDes =
         article.description.length > 120 ? article.description.slice(0, 120) + "...."
         : article.description;
         description.textContent = truncatedDes;
-
 
         blogCard.appendChild(img);
         blogCard.appendChild(title);
