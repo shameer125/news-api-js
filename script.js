@@ -2,9 +2,9 @@ const apikey =
 'c9e55e6225c74acd8a70b22c2220ffb5';
 
 const blogContainer = document.getElementById("blog-container");
-
 const searchField = document.getElementById("search-input");
 const searchButton = document.getElementById("search-button");
+
 
 async function fetchRandomNews(){
     try {
