@@ -5,8 +5,8 @@ const blogContainer = document.getElementById("blog-container");
 const searchField = document.getElementById("search-input");
 const searchButton = document.getElementById("search-button");
 
-
-async function fetchRandomNews(){
+async function fetchRandomNews() {
+    
     try {
         const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&pageSize=10&apikey=${apikey}`
         const response = await fetch(apiUrl)
@@ -15,6 +15,7 @@ async function fetchRandomNews(){
     } catch (error) {
         console.error("Error fetching random News", error)
         return [];
+        
     }
 }
 
