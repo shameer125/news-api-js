@@ -30,7 +30,7 @@ searchButton.addEventListener("click", async ()=> {
         }catch (error){
             console.log("Error fetching random News by query", error);
         }
-        
+
     }
 })
 
@@ -47,7 +47,9 @@ async function fetchNewsQuery(query) {
 }
 
 function displayBlogs(articles) {
+
     blogContainer.innerHTML = "";
+    
     articles.forEach(article => {
         const blogCard = document.createElement("div");
         blogCard.classList.add("blog-card");
