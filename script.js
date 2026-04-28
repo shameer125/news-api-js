@@ -15,13 +15,14 @@ async function fetchRandomNews() {
     } catch (error) {
         console.error("Error fetching random News", error)
         return [];
-        
+
     }
 }
 
 searchButton.addEventListener("click", async ()=> {
     const query = searchField.value.trim();
-    if(query !== ""){
+    if (query !== "") {
+        
         try{
             const articles = await fetchNewsQuery(query)
             displayBlogs(articles);
@@ -29,6 +30,7 @@ searchButton.addEventListener("click", async ()=> {
         }catch (error){
             console.log("Error fetching random News by query", error);
         }
+        
     }
 })
 
