@@ -85,7 +85,9 @@ function displayBlogs(articles) {
     try{
         const articles = await fetchRandomNews();
         displayBlogs(articles)
+
     } catch (error) {
+        
         console.error("Error fetching random news", error)
     }
 }) ();
