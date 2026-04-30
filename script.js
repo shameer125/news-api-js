@@ -44,7 +44,6 @@ async function fetchNewsQuery(query) {
 }
 
 function displayBlogs(articles) {
-
     blogContainer.innerHTML = "";
 
     articles.forEach(article => {
@@ -77,14 +76,11 @@ function displayBlogs(articles) {
 
 }
 
-
 (async ()=> {
     try{
         const articles = await fetchRandomNews();
         displayBlogs(articles)
-
     } catch (error) {
-        
         console.error("Error fetching random news", error)
     }
 }) ();
