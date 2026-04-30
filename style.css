@@ -3,11 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     position: relative;
 }
-
 nav{
     background: #2d4c50;
     box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
@@ -17,7 +15,6 @@ nav{
     max-width: 1200px;
     margin: auto;
 }
-
 .navbar{
     display: flex;
     justify-content: space-between;
