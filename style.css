@@ -52,6 +52,7 @@ nav{
     align-items: flex-start;
     flex-wrap: wrap;
 }
+
 .blog-card{
     width: 280px;
     border: 1px solid #2d4c50;
@@ -80,6 +81,7 @@ nav{
     font-size: 0.7rem;
 }
 
+
 @media (max-width: 500px) {
     nav {
         padding: 0 10px;
@@ -87,6 +89,7 @@ nav{
     .navbar .logo {
     font-size: 2.8rem;
 }
+
 #search-input {
     width: 150px;
     padding: 10px 10px;
