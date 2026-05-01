@@ -44,6 +44,7 @@ async function fetchNewsQuery(query) {
 }
 
 function displayBlogs(articles) {
+    
     blogContainer.innerHTML = "";
 
     articles.forEach(article => {
@@ -73,7 +74,6 @@ function displayBlogs(articles) {
         blogContainer.appendChild(blogCard);
         
     });
-
 }
 
 (async ()=> {
