@@ -30,9 +30,9 @@ searchButton.addEventListener("click", async ()=> {
 
     }
 })
-
 async function fetchNewsQuery(query) {
-      try {
+    try {
+          
         const apiUrl = `https://newsapi.org/v2/everything?q=${query}&pageSize=10&apikey=${apikey}`
         const response = await fetch(apiUrl)
         const data = await response.json();
@@ -44,7 +44,7 @@ async function fetchNewsQuery(query) {
 }
 
 function displayBlogs(articles) {
-    
+
     blogContainer.innerHTML = "";
 
     articles.forEach(article => {
